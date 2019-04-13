@@ -63,34 +63,12 @@
           When sending files, please email it to <a href="mailto:khagendra13@gmail.com"><strong>khagendra13@gmail.com</strong></a>.</p>
           </div>
           <div class="two-column" style="padding-bottom:80px;" data-jkit="[show:delay=2000;speed=1500;animation=fade]">
-            <form id="ajax-contact" action="https://formspree.io/khagendra13@gmail.com" method="POST">
-              <div class="contact">
-              <p>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-              </p>
-              </div>
-              <div class="contact">
-              <p>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="_replyto" required>
-              </p>
-              </div>
-              <div class="contact">
-              <p>
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
-              </p>
-              </div>
-              <div id="form-messages">
-              		<p></p>
-              </div>                 
-              <div class="contact">
-              <p>
-                  <button type="submit" value="Send">Send</button>                  
-              </p>
-              </div>
-            </form>            
+          <form method="POST" action="https://formspree.io/khagendra13@gmail.com">
+            <input type="name" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+          </form>          
           </div>          
         </div>         
   </div>
