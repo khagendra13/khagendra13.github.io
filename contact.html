@@ -63,7 +63,7 @@
           When sending files, please email it to <a href="mailto:khagendra13@gmail.com"><strong>khagendra13@gmail.com</strong></a>.</p>
           </div>
           <div class="two-column" style="padding-bottom:80px;" data-jkit="[show:delay=2000;speed=1500;animation=fade]">
-            <form id="ajax-contact" method="post" action="email/mailer.php">
+            <form id="ajax-contact" action="https://formspree.io/khagendra13@gmail.com" method="POST">
               <div class="contact">
               <p>
                   <label for="name">Name:</label>
@@ -73,7 +73,7 @@
               <div class="contact">
               <p>
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="_replyto" required>
               </p>
               </div>
               <div class="contact">
@@ -87,7 +87,7 @@
               </div>                 
               <div class="contact">
               <p>
-                  <button type="submit">Send</button>                  
+                  <button type="submit" value="Send">Send</button>                  
               </p>
               </div>
             </form>            
