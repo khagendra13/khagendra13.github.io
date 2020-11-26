@@ -1,0 +1,10 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://khagendra13.com/$1 [R,L]
